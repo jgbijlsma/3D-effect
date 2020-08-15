@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("./background.png");
+  background-size: contain;
+  animation: slide 5s infinite linear;
+}
+
+@keyframes slide {
+  0% {
+    background-position-x: 0px;
+  }
+
+  100% {
+    background-position-x: -1920px;
+  }
+}
+
+.emoji {
+  font-size: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: 4s ease-in-out;
+}
